@@ -34,7 +34,6 @@ ML2/
 
 - C compiler supporting C17.
 - CMake.
-- Python 3 (for visualization).
 
 ## Usage
 
