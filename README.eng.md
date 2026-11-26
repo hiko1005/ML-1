@@ -17,7 +17,7 @@ The project focuses on understanding the underlying mathematics and implementing
 ## Project Structure
 
 ```text
-ML2/
+ML1/
 ├── src/
 │   ├── main.c
 │   ├── model.c
@@ -34,7 +34,6 @@ ML2/
 
 - C compiler supporting C17.
 - CMake.
-- Python 3 (for visualization).
 
 ## Usage
 
