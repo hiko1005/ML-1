@@ -17,7 +17,7 @@ The project focuses on understanding the underlying mathematics and implementing
 ## Project Structure
 
 ```text
-ML2/
+ML1/
 ├── src/
 │   ├── main.c
 │   ├── model.c
