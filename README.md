@@ -1,23 +1,23 @@
-# Logistic Regression from Scratch (C)
+# Логістична регресія з нуля (C)
 
-A small educational project implementing Logistic Regression from scratch in C as part of my studies in Machine Learning.
+Невеликий навчальний проєкт, у якому реалізовано логістичну регресію мовою C з нуля в межах мого вивчення машинного навчання.
 
-The project focuses on understanding the underlying mathematics and implementing the learning process without relying on machine learning libraries.
+Основна мета проєкту — дослідити математичні основи алгоритму та самостійно реалізувати процес навчання без використання готових бібліотек машинного навчання.
 
-## Features
+## Можливості
 
-- Logistic Regression implementation in C.
-- Sigmoid activation function.
-- Binary Cross-Entropy loss.
-- Gradient Descent optimization.
-- Configurable learning rate and model parameters.
-- Training and prediction modes.
-- Model parameter persistence.
+- Реалізація логістичної регресії мовою C.
+- Сигмоїдна функція активації.
+- Функція втрат Binary Cross-Entropy.
+- Оптимізація методом градієнтного спуску.
+- Можливість налаштування швидкості навчання та параметрів моделі.
+- Режими навчання та передбачення.
+- Збереження параметрів моделі.
 
-## Project Structure
+## Структура проєкту
 
 ```text
-ML2/
+ML1/
 ├── src/
 │   ├── main.c
 │   ├── model.c
@@ -30,38 +30,37 @@ ML2/
 └── CMakeLists.txt
 ```
 
-## Requirements
+## Необхідні компоненти
 
-- C compiler supporting C17.
+- Компілятор C із підтримкою стандарту C17.
 - CMake.
-- Python 3 (for visualization).
 
-## Usage
+## Використання
 
-### 1. Build
+### 1. Збирання проєкту
 
 ```bash
 cmake -S . -B build
 cmake --build build
 ```
 
-### 2. Train the model
+### 2. Навчання моделі
 
 ```bash
 ./build/model -learn 1000
 ```
 
-Replace `1000` with the desired number of training epochs.
+Замість `1000` вкажіть бажану кількість епох навчання.
 
-### 3. Make predictions
+### 3. Отримання передбачень
 
 ```bash
 ./build/model -predict
 ```
 
-## Configuration
+## Конфігурація
 
-The model parameters are stored in `config.txt`:
+Параметри моделі зберігаються у файлі `config.txt`:
 
 ```text
 w = 0
@@ -69,15 +68,15 @@ b = 0
 L = 0.1
 ```
 
-Where:
+Де:
 
-- `w` — weight.
-- `b` — bias.
-- `L` — learning rate.
+- `w` — вага.
+- `b` — зміщення (bias).
+- `L` — швидкість навчання (learning rate).
 
-## Dataset
+## Набір даних
 
-The dataset is stored in `data.txt` and follows this format:
+Дані зберігаються у файлі `data.txt` у такому форматі:
 
 ```text
 n
@@ -87,10 +86,10 @@ x2, y2
 xn, yn
 ```
 
-The first line specifies the number of samples. Each subsequent line contains an input value and its corresponding binary label.
+Перший рядок визначає кількість зразків. Кожен наступний рядок містить вхідне значення та відповідну йому бінарну мітку класу.
 
-## Motivation
+## Мотивація
 
-This project was created to explore the mathematical foundations of Logistic Regression and understand how a machine learning model learns from data through gradient descent.
+Цей проєкт створено з метою дослідити математичні основи логістичної регресії та зрозуміти, як модель машинного навчання навчається на даних за допомогою градієнтного спуску.
 
-It is a learning project, so there is still room for improvement.
+Це навчальний проєкт, тому він усе ще має простір для вдосконалення.
